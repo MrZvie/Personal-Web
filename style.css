@@ -31,6 +31,11 @@ header {
   text-decoration: none;
   padding: 5px;
 }
+
+.logo:hover{
+  color: #ff004f;
+}
+
 nav {
   position: relative;
   display: flex;
@@ -414,7 +419,7 @@ textarea {
 }
 
 /* Responsive Section */
-@media (max-width: 688px) {
+@media (width < 750px) {
   /* For NavBar */
   header label {
     display: block;
@@ -578,9 +583,7 @@ textarea {
 }
 
 
-
-
-@media (max-width: 800px) {
+@media (max-width: 950px) {
   /* For NavBar */
   nav {
     display: flex;
@@ -621,7 +624,7 @@ textarea {
   }
 
   /* About Section */
-  #about {
+  /* #about {
     display: flexbox;
     margin: 0;
     width: 100%;
@@ -646,7 +649,7 @@ textarea {
   }
   .card:hover {
     height: 300px;
-  }
+  } */
 
   /* Project SEction */
   .content-1 p{
@@ -664,7 +667,7 @@ textarea {
   /* Contact Section */
   .contact-box {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
   }
 
   #contact form .input-group {
