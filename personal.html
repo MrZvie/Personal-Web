@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Personal Website</title>
+  </head>
+  <body>
+    <header>
+      <a href="#" class="logo">MrZvie</a>
+      <input type="checkbox" id="menu" hidden />
+      <label for="menu">
+        <i class="fa-solid fa-bars"></i>
+      </label>
+      <nav>
+        <label for="menu">
+          <i class="fa-solid fa-x"></i>
+        </label>
+        <a href="#home"><i class="fa-solid fa-house"></i>Home</a>
+        <a href="#about"><i class="fa-solid fa-user"></i>About Me</a>
+        <a href="#project"><i class="fa-solid fa-circle-info"></i>Project</a>
+        <a href="#contact"><i class="fa-solid fa-phone"></i>Contact</a>
+      </nav>
+    </header>
+
+    <section id="home">
+      <div class="container">
+        <div>
+          <img src="images/myself.png" />
+        </div>
+        <div class="text">
+          <h1>Hi, I'm</h1>
+          <h1 class="type">Angelito Benedicto</h1>
+          <p>Cloud Engineer and System Admin</p>
+        </div>
+      </div>
+    </section>
+
+    <div class="about-1">
+      <section id="about">
+        <div class="container-1">
+          <div class="text-1">
+            <h1 class="upper-title">About Me</h1>
+            <p>
+              Hello, my name is Angelito Bedicto, currently studying in Lyceum
+              Northwestern University. I want to be a Cloud Engineer because the
+              opportunities are endless, always evolving and across every
+              industry - meaning an exciting and well-rewarded future.The
+              specific roles available can be broad or highly specialised,
+              including Architects, Developers, Data Scientists, Cloud Security
+              Engineers. I also like to be a Full Stack Developer and I want to
+              learn Cybersecurity.
+            </p>
+            <div class="container-2">
+              <div class="card">
+                <div class="imgBx">
+                  <img src="images/skills.png" />
+                </div>
+                <div class="content">
+                  <h2>Skills</h2>
+                  <p>
+                    Programming, Networking, Cybersecurity,
+                    Virtualization,Server Instalation and Storage Systems
+                  </p>
+                </div>
+              </div>
+              <div class="card">
+                <div class="imgBx">
+                  <img src="images/experience.png" />
+                </div>
+                <div class="content">
+                  <h2>Experience</h2>
+                  <p>
+                    Jr.Data Scientist, .NET Developer, DevOps Engineer and Cloud
+                    Engineer
+                  </p>
+                </div>
+              </div>
+              <div class="card">
+                <div class="imgBx">
+                  <img src="images/education.png" />
+                </div>
+                <div class="content">
+                  <h2>Education</h2>
+                  <p>
+                    Bersamin Elementary School, Bersamin Agro Industrial High
+                    School, Lyceum Northwestern University
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <section id="project">
+      <h1>Project</h1>
+      <div class="my-project">
+        <div class="work">
+          <div class="icon">
+            <i class="fa-brands fa-youtube"></i>
+          </div>
+          <div class="content-1">
+            <h2>Youtube</h2>
+            <p>
+              YouTube is a popular video sharing website where registered users
+              can upload and share videos with anyone able to access the site.
+              These videos can also be embedded and shared on other sites.
+            </p>
+            <button class="press">
+              <a
+                href="https://youtu.be/xm3YgoEiEDc?si=lgO8q8f3Qx0ZVKvD"
+                target="_blank"
+                >Learn More</a
+              >
+            </button>
+          </div>
+        </div>
+        <div class="work">
+          <div class="icon">
+            <i class="fa-brands fa-app-store-ios"></i>
+          </div>
+          <div class="content-1">
+            <h2>AppStore</h2>
+            <p>
+              App store is an app that helps a user find software and install it
+              on their computer or mobile device. It's a collection of free or
+              commercial software and games approved for use on your device.
+            </p>
+            <button class="press">
+              <a href="https://www.apple.com/app-store/" target="_blank"
+                >Learn More</a
+              >
+            </button>
+          </div>
+        </div>
+        <div class="work">
+          <div class="icon">
+            <i class="fa-solid fa-table-cells-large"></i>
+          </div>
+          <div class="content-1">
+            <h2>Grid Garden</h2>
+            <p>
+              Here we learn grid-area property that combines grid-colum and
+              grid-row together. We write grid-area, define starting row and
+              column and then ending row and column: grid-area.
+            </p>
+            <button class="press">
+              <a href="https://cssgridgarden.com/" target="_blank"
+                >Learn More</a
+              >
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="container-3">
+        <div class="contact-box">
+          <div class="contact-left">
+            <h3>Send Your Message</h3>
+            <form>
+              <div class="input-row">
+                <div class="input-group">
+                  <label>Name</label>
+                  <input type="text" placeholder="Jhonny Sins" />
+                  <label>Phone</label>
+                  <input type="text" placeholder="0923 4573 455" />
+                </div>
+              </div>
+              <div class="input-row">
+                <div class="input-group">
+                  <label>Email</label>
+                  <input type="email" placeholder="@succeedgmail.com" />
+                  <label>Subject</label>
+                  <input type="text" placeholder="Web Making" />
+                </div>
+              </div>
+
+              <label>Message</label>
+              <textarea rows="5" placeholder="Your Message"></textarea>
+
+              <button type="submit">Send</button>
+            </form>
+          </div>
+
+          <div class="contact-right">
+            <h3>Contact Me</h3>
+
+            <table>
+              <tr>
+                <td>Email</td>
+                <td>ddy010718@gmail.com</td>
+              </tr>
+              <tr>
+                <td>Phone</td>
+                <td>09156425474</td>
+              </tr>
+              <tr>
+                <td>Address</td>
+                <td>Alcala, Pangasinan, Philippines</td>
+              </tr>
+              <tr>
+                <td>Facebook</td>
+                <td>
+                  <a
+                    href="https://www.facebook.com/angelito.benedicto.01.06.28"
+                    target="_blank"
+                    >Angelito Benedicto</a
+                  >
+                </td>
+              </tr>
+              <tr>
+                <td>Github</td>
+                <td>
+                  <a href="https://github.com/MrZvie" target="_blank">MrZvie</a>
+                </td>
+              </tr>
+              <tr>
+                <td>Telegram</td>
+                <td>
+                  <a href="https://t.me/MrZvie" target="_blank">MrZvie</a>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
