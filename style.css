@@ -146,21 +146,24 @@ nav a:hover::after {
 
 /* About Section  */
 #about {
-  /* height: 100vh; */
   width: 100%;
   max-width: 1000px;
+  display: flex;
+  padding: auto 0;
+  justify-content: center;
+  align-items: center;
   margin: 0 auto;
 }
 
 .about-1 {
   background-color: #383535;
+  height: 100vh;
+  display: flex;
 }
 
 #about .container-1 {
   width: 100%;
   padding: 5em 2em;
-
-  /* padding: 16px; */
 }
 
 .text-1 {
@@ -243,58 +246,18 @@ nav a:hover::after {
   margin-top: 30px;
   transition-delay: 0.1s;
 }
-/*.container-2 .card:hover {
-  height: 320px;
-  box-shadow: rgb(31, 180, 88) -5px 30px 40px -10px,
-    rgb(42, 175, 232) 10px 30px 40px -10px;
-}
-
-.container-2 .card .imgBx {
-  position: relative;
-  width: 150px;
-  height: 130px;
-  top: -60px;
-  left: 35px;
-  box-shadow: 0 5px 20px rgba(0, 0, 0, 0, 5);
-}
-
-.container-2 .card .imgBx img {
-  max-width: 100px;
-}
-
-.container-2 .card .content {
-  position: relative;
-  margin-top: -140px;
-  padding: 10px 15px;
-  color: #d4cece;
-  text-align: center;
-  visibility: hidden;
-  opacity: 0;
-  transition: 0.3s ease-in-out;
-}
-
-.container-2 .card:hover .content {
-  visibility: visible;
-  opacity: 1;
-  margin-top: -60px;
-  transition-delay: 0.3s;
-}
-
-.content p {
-  font-size: 15px;
-  word-spacing: 3px;
-} */
 
 /* For Project Section */
 #project {
   width: 100%;
   max-width: 1000px;
   margin: 0 auto;
+  height: 100vh;
   padding-top: 50px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 .my-project {
@@ -363,6 +326,9 @@ nav a:hover::after {
   padding: 10px;
   margin: 0;
   width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
 }
 
 .container-3 {
@@ -389,16 +355,17 @@ nav a:hover::after {
 
 #contact form .input-group {
   display: flex;
-  justify-content: space-between;
+  /* justify-content: space-between; */
+  flex-direction: row;
   gap: 20px;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   flex-basis: 45%;
 }
 
 .input-group input {
   width: 100%;
   border: none;
-  border-bottom: 5px solid #7f33b3;
+  border-bottom: 3px solid #7f33b3;
   outline: none;
   padding-bottom: 5px;
 }
@@ -412,7 +379,7 @@ textarea {
 }
 
 #contact label {
-  margin-bottom: 6px;
+  margin-bottom: 2px;
   display: block;
   color: #a2a1a8;
 }
@@ -530,6 +497,10 @@ textarea {
     flex-direction: column;
   }
 
+  .about-1 {
+    height: 100%;
+  }
+
   .container-2 {
     display: flex;
     flex-direction: column;
@@ -545,41 +516,11 @@ textarea {
     height: 300px;
   }
 
-  /* .container-1 {
-    display: inline;
-    padding: 10px;
-    word-spacing: 5px;
-  }
-
-  .text-1 {
-    padding: 25px;
-  }
-
-  .container-2 {
-    display: flexbox;
-    height: 100%;
-    flex-direction: column;
-  }
-  .container-2 .card {
-    display: block;
-    margin-top: 10px;
-    z-index: 9;
-    border: 5px solid red;
-  }
-
-  .container-2 .card .imgBx{
-    top: 0;
-    left: 15px;
-  }
-
-  .card .imgBx img{
-    width: 70px;
-  } */
-
   /* For ProjectSection */
   #project {
     padding: auto;
     margin: auto;
+    height: 100%;
     width: 100%;
     z-index: 10;
   }
@@ -604,7 +545,7 @@ textarea {
     max-height: 390px;
     width: 100%;
     margin-top: 50px;
-    border: 2px solid aqua;
+    border: 1px solid aqua;
   }
 
   .my-project .content-1 {
@@ -619,5 +560,59 @@ textarea {
     position: relative;
     font-size: 60px;
     top: 20px;
+  }
+
+  /* For Contact Section */
+  #contact {
+    height: 100%;
+  }
+  .contact-box {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #contact form .input-group {
+    flex-direction: column;
+    gap: 0;
+  }
+}
+@media (max-width: 900px) {
+  /* For NavBar */
+  nav {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+  }
+
+  nav a {
+    margin: 0 10px;
+  }
+
+  /* For Home Section */
+  #home {
+    display: flexbox;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 50px;
+    align-items: center;
+  }
+
+  #home .container img {
+    width: 200px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+  }
+
+  .text h1 {
+    font-size: 40px;
+  }
+  .text p {
+    font-size: 20px;
   }
 }
