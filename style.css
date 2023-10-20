@@ -576,7 +576,11 @@ textarea {
     gap: 0;
   }
 }
-@media (max-width: 900px) {
+
+
+
+
+@media (max-width: 800px) {
   /* For NavBar */
   nav {
     display: flex;
@@ -615,4 +619,65 @@ textarea {
   .text p {
     font-size: 20px;
   }
+
+  /* About Section */
+  #about {
+    display: flexbox;
+    margin: 0;
+    width: 100%;
+    padding: 0;
+    flex-direction: column;
+  }
+
+  .about-1 {
+    height: 100%;
+  }
+
+  .container-2 {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .container-2 .imgBx img {
+    width: 100px;
+  }
+  .card + .card {
+    margin-top: 5em;
+  }
+  .card:hover {
+    height: 300px;
+  }
+
+  /* Project SEction */
+  .content-1 p{
+    font-size: 13px;
+  }
+
+  .content-1 h2{
+    font-size: 20px;
+  }
+
+  #project button a{
+    font-size: 15px;
+  }
+
+  /* Contact Section */
+  .contact-box {
+    display: flex;
+    flex-direction: row;
+  }
+
+  #contact form .input-group {
+    flex-direction: column;
+    gap: 0;
+  }
+  textarea{
+    padding: 5px;
+    height: 70px;
+  }
+
+  #contact label {
+    margin-bottom: 0;
+  }
+
 }
