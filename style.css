@@ -32,7 +32,7 @@ header {
   padding: 5px;
 }
 
-.logo:hover{
+.logo:hover {
   color: #ff004f;
 }
 
@@ -417,9 +417,11 @@ textarea {
 #contact tr td {
   padding-top: 20px;
 }
-
+#contact td i {
+  margin-left: 10px;
+}
 /* Responsive Section */
-@media (width < 750px) {
+@media only screen and (max-width: 750px) {
   /* For NavBar */
   header label {
     display: block;
@@ -490,7 +492,7 @@ textarea {
     font-size: 40px;
   }
   .text p {
-    font-size: 20px;
+    font-size: 25px;
   }
 
   /* For About Section */
@@ -582,8 +584,7 @@ textarea {
   }
 }
 
-
-@media (max-width: 950px) {
+@media only screen and (min-width: 751px) and (max-width: 950px) {
   /* For NavBar */
   nav {
     display: flex;
@@ -611,7 +612,7 @@ textarea {
   }
 
   #home .container img {
-    width: 200px;
+    width: 300px;
     border-radius: 50%;
     border: 2px solid #fff;
   }
@@ -620,7 +621,7 @@ textarea {
     font-size: 40px;
   }
   .text p {
-    font-size: 20px;
+    font-size: 25px;
   }
 
   /* About Section */
@@ -652,29 +653,30 @@ textarea {
   } */
 
   /* Project SEction */
-  .content-1 p{
-    font-size: 13px;
+  .content-1 p {
+    font-size: 15px;
   }
 
-  .content-1 h2{
-    font-size: 20px;
+  .content-1 h2 {
+    font-size: 30px;
   }
 
-  #project button a{
+  #project button a {
     font-size: 15px;
   }
 
   /* Contact Section */
+
   .contact-box {
     display: flex;
-    flex-direction: column;
+    /* flex-direction: column; */
   }
 
   #contact form .input-group {
     flex-direction: column;
     gap: 0;
   }
-  textarea{
+  textarea {
     padding: 5px;
     height: 70px;
   }
@@ -682,5 +684,4 @@ textarea {
   #contact label {
     margin-bottom: 0;
   }
-
 }
