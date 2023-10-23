@@ -417,8 +417,27 @@ textarea {
 #contact tr td {
   padding-top: 20px;
 }
+#contact tr td a{
+  text-decoration: none;
+  color: #221f1f;
+}
+#contact tr td a:hover{
+  color: #ff004f;
+}
 #contact td i {
   margin-left: 10px;
+}
+
+footer{
+  background: #616161;
+  text-align: center;
+  padding: 20px 0;
+}
+footer a{
+  text-decoration: none;
+  color: #080808;
+  font-size: 40px;
+  margin: 0 20px;
 }
 /* Responsive Section */
 @media only screen and (max-width: 750px) {
